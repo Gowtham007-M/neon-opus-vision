@@ -159,13 +159,21 @@ All colors MUST be HSL for consistent theming.
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(1deg); }
+    50% { transform: translateY(-5px) rotate(-1deg); }
+    75% { transform: translateY(-15px) rotate(0.5deg); }
   }
 
   @keyframes glow-pulse {
-    0%, 100% { filter: drop-shadow(0 0 20px hsl(var(--primary) / 0.3)); }
-    50% { filter: drop-shadow(0 0 40px hsl(var(--primary) / 0.6)); }
+    0%, 100% { 
+      filter: drop-shadow(0 0 20px hsl(var(--primary) / 0.3));
+      transform: scale(1);
+    }
+    50% { 
+      filter: drop-shadow(0 0 40px hsl(var(--primary) / 0.6));
+      transform: scale(1.05);
+    }
   }
 
   @keyframes slide-up {
@@ -190,6 +198,62 @@ All colors MUST be HSL for consistent theming.
     }
   }
 
+  @keyframes dataStream {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  @keyframes matrixDrop {
+    0% {
+      transform: translateY(-100px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  @keyframes tech-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.8), 0 0 60px hsl(var(--accent) / 0.4);
+    }
+  }
+
+  @keyframes hologram {
+    0%, 100% { 
+      opacity: 0.8;
+      transform: translateY(0px) skewX(0deg);
+    }
+    25% { 
+      opacity: 1;
+      transform: translateY(-2px) skewX(0.5deg);
+    }
+    50% { 
+      opacity: 0.9;
+      transform: translateY(-1px) skewX(-0.5deg);
+    }
+    75% { 
+      opacity: 1;
+      transform: translateY(-3px) skewX(0.2deg);
+    }
+  }
+
   /* Animation Classes */
   .animate-float {
     animation: float 3s ease-in-out infinite;
@@ -207,9 +271,25 @@ All colors MUST be HSL for consistent theming.
     animation: scale-in 0.6s ease-out forwards;
   }
 
+  .animate-tech-pulse {
+    animation: tech-pulse 3s ease-in-out infinite;
+  }
+
+  .animate-hologram {
+    animation: hologram 4s ease-in-out infinite;
+  }
+
+  .animate-matrix-glow {
+    animation: glow-pulse 1.5s ease-in-out infinite, float 4s ease-in-out infinite;
+  }
+
   /* Staggered Animations */
   .animate-delay-100 { animation-delay: 0.1s; }
   .animate-delay-200 { animation-delay: 0.2s; }
   .animate-delay-300 { animation-delay: 0.3s; }
   .animate-delay-400 { animation-delay: 0.4s; }
+  .animate-delay-500 { animation-delay: 0.5s; }
+  .animate-delay-1000 { animation-delay: 1s; }
+  .animate-delay-1500 { animation-delay: 1.5s; }
+  .animate-delay-2000 { animation-delay: 2s; }
 }
