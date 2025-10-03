@@ -58,7 +58,7 @@ export const EventDetails = () => {
           </p>
         </div>
 
-        {/* Timeline */}
+        {/* Timeline
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-center mb-12 text-glow animate-tech-pulse">
             <Clock className="w-8 h-8 inline mr-3 text-primary animate-float" />
@@ -87,9 +87,9 @@ export const EventDetails = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
-        {/* Challenge Categories */}
+        {/* Challenge Categories
         <div>
           <h3 className="text-3xl font-bold text-center mb-12 text-glow animate-tech-pulse animate-delay-500">
             <Code className="w-8 h-8 inline mr-3 text-secondary animate-float animate-delay-300" />
@@ -116,7 +116,7 @@ export const EventDetails = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Prize Info */}
         <div className="mt-20 text-center">
@@ -124,8 +124,8 @@ export const EventDetails = () => {
             <div className="flex items-center justify-center gap-4 mb-4">
               <Trophy className="w-12 h-12 text-accent animate-glow-pulse animate-float" />
               <div>
-                <div className="text-4xl font-bold aurora-text animate-hologram">₹5,00,000</div>
-                <div className="text-lg text-muted-foreground animate-matrix-glow">Total Prize Pool</div>
+                <div className="text-4xl font-bold aurora-text animate-hologram">₹1,00,000</div>
+                <div className="text-lg text-muted-foreground animate-matrix-glow">Worth Prices</div>
               </div>
             </div>
             <p className="text-muted-foreground animate-hologram animate-delay-500">

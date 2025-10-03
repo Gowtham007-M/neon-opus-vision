@@ -154,20 +154,14 @@ export const Contact = () => {
                   </p>
                   
                   <div className="flex flex-col gap-3">
-                    <Button 
-                      size="lg"
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground glow w-full animate-glow-pulse hover:scale-105 transition-all duration-300"
-                    >
-                      Register Online
-                    </Button>
-                    
-                    <Button 
-                      variant="outline"
-                      size="lg"
-                      className="border-secondary/50 text-secondary hover:bg-secondary/10 w-full animate-hologram hover:scale-105 transition-all duration-300"
-                    >
-                      Download QR Code
-                    </Button>
+                    <a href="https://forms.gle/PCYYvAmgmmtSpmze7" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        size="lg"
+                        className="bg-primary hover:bg-primary/90 text-primary-foreground glow w-full animate-glow-pulse hover:scale-105 transition-all duration-300"
+                      >
+                        Register Online
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </CardContent>
@@ -180,12 +174,6 @@ export const Contact = () => {
                 <p className="text-muted-foreground mb-4 animate-matrix-glow">
                   Solve TVSNext Challenges for exciting additional rewards!
                 </p>
-                <Button 
-                  variant="outline" 
-                  className="border-accent/50 text-accent hover:bg-accent/10 animate-glow-pulse hover:scale-105 transition-all duration-300"
-                >
-                  Learn More
-                </Button>
               </div>
             </div>
           </div>

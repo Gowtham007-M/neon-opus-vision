@@ -1,20 +1,12 @@
-import { Calendar, Trophy, Users, Zap } from "lucide-react";
+import { Calendar, Trophy, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
+// import heroBg from "@/assets/hero-bg.jpg"; // Removed local import
 import { CodeParticles, CircuitLines, DataStream, PulsingOrbs, RotatingIcons, MatrixRain, GeometricShapes } from "@/components/AnimatedElements";
+
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="Futuristic tech background" 
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background/90" />
-      </div>
 
       {/* Animated Background Elements */}
       <CodeParticles />
@@ -34,16 +26,42 @@ export const Hero = () => {
 
       {/* Main Content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
-        {/* Logo/Title */}
-        <div className="mb-8 animate-slide-up">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 aurora-text animate-hologram">
-            DEV ARENA
-          </h1>
-          <div className="text-xl md:text-2xl text-muted-foreground mb-2 animate-glow-pulse animate-delay-500">
-            TECHSAAVY Presents
+        {/* New Flex Container for the Header Row */}
+        <div className="flex flex-col w-full items-center mb-8 animate-slide-up">
+          
+          {/* Logos Container */}
+          <div className="flex items-center justify-between mb-16 px-8 md:px-16 gap-8 md:gap-16">
+            {/* 1. College Logo */}
+            <img 
+              src="/easwari-logo.png"
+              className="w-auto h-16 md:h-20 animate-float" 
+              alt="College Logo" 
+            />
+            {/* 2. Add your new logo here */}
+            <img 
+              src="/tvs-next.png" 
+              className="w-auto h-16 md:h-20 animate-float animate-delay-200" 
+              alt="New Logo" 
+            />
+            {/* 3. Tech Club Logo */}
+            <img 
+              src="/techsaavy.jpg" 
+              className="w-auto h-16 md:h-20 animate-float animate-delay-400" 
+              alt="Tech Club Logo" 
+            />
           </div>
-          <div className="text-lg text-primary/80 animate-matrix-glow animate-delay-1000">
-            Easwari Engineering College - Department of IT
+
+          {/* Title block */}
+          <div className="w-full">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 aurora-text animate-hologram">
+              DEV ARENA
+            </h1>
+            <div className="text-xl md:text-2xl text-muted-foreground mb-2 animate-glow-pulse animate-delay-500">
+              TECHSAAVY Presents
+            </div>
+            <div className="text-lg text-primary/80 animate-matrix-glow animate-delay-1000">
+              Easwari Engineering College - Department of IT
+            </div>
           </div>
         </div>
 
@@ -68,7 +86,7 @@ export const Hero = () => {
           
           <div className="glass-card text-center animate-glow-pulse animate-delay-100 hover:animate-tech-pulse transition-all duration-300 hover:scale-105">
             <Trophy className="w-8 h-8 text-accent mx-auto mb-3 animate-float animate-delay-200" />
-            <div className="text-lg font-semibold text-accent">₹5,00,000</div>
+            <div className="text-lg font-semibold text-accent">₹1,00,000</div>
             <div className="text-sm text-muted-foreground">Worth Prizes</div>
           </div>
           
@@ -81,29 +99,21 @@ export const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animate-delay-400">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold glow transition-all duration-300 hover:scale-105 animate-tech-pulse"
-          >
-            <Users className="w-5 h-5 mr-2 animate-float" />
-            Register Now
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-primary/50 text-primary hover:bg-primary/10 px-8 py-4 text-lg font-semibold backdrop-blur-sm animate-hologram"
-          >
-            Learn More
-          </Button>
+          <a href="https://forms.gle/PCYYvAmgmmtSpmze7" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground glow w-full animate-glow-pulse hover:scale-105 transition-all duration-300"
+            >
+              Register Now
+            </Button>
+          </a>
         </div>
 
         {/* Partners */}
         <div className="mt-16 animate-slide-up animate-delay-500">
-          <div className="text-sm text-muted-foreground mb-4 animate-glow-pulse">Powered by</div>
+          <div className="text-sm text-muted-foreground mb-4 animate-glow-pulse">Challenges Given By</div>
           <div className="flex items-center justify-center gap-8 flex-wrap">
-            <div className="text-lg font-bold text-foreground/80 animate-hologram">ORACLE</div>
-            <div className="text-lg font-bold text-foreground/80 animate-hologram animate-delay-500">TVSNext</div>
+            <div className="text-lg font-bold text-foreground/80 animate-hologram">TVSNext</div>
           </div>
         </div>
       </div>
@@ -117,3 +127,4 @@ export const Hero = () => {
     </section>
   );
 };
+

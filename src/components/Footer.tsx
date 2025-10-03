@@ -22,7 +22,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-1">
                 <Zap className="w-4 h-4 text-accent" />
-                ₹5,00,000 Prizes
+                ₹1,00,000 Worth Prizes
               </div>
               <div className="flex items-center gap-1">
                 <Heart className="w-4 h-4 text-secondary" />
@@ -40,7 +40,7 @@ export const Footer = () => {
               Easwari Engineering College - Department of Information Technology
             </div>
             <div className="text-xs text-muted-foreground/70">
-              Powered by Oracle & TVSNext
+              Challenges By TVSNext
             </div>
           </div>
 
