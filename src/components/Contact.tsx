@@ -14,7 +14,7 @@ export const Contact = () => {
     {
       name: "Dr. K. Sundar",
       role: "AP/IT",
-      department: "Associate Professor"
+      department: "Club Coordinator"
     }
   ];
 

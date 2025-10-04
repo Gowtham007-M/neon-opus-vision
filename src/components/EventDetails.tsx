@@ -125,7 +125,7 @@ export const EventDetails = () => {
               <Trophy className="w-12 h-12 text-accent animate-glow-pulse animate-float" />
               <div>
                 <div className="text-4xl font-bold aurora-text animate-hologram">₹1,00,000</div>
-                <div className="text-lg text-muted-foreground animate-matrix-glow">Worth Prices</div>
+                <div className="text-lg text-muted-foreground animate-matrix-glow">Worth Prizes</div>
               </div>
             </div>
             <p className="text-muted-foreground animate-hologram animate-delay-500">
