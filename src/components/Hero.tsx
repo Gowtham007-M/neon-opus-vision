@@ -65,11 +65,14 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Subtitle */}
+          {/* Subtitle */}
         <div className="mb-12 animate-slide-up animate-delay-200">
           <h2 className="text-3xl md:text-5xl font-semibold mb-6 text-glow animate-tech-pulse">
             24-Hour Hackathon
           </h2>
+          <h3 className="text-xl md:text-2xl font-semibold mb-6 text-glow animate-tech-pulse">
+            Register and get your problem statement now!
+          </h3>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-hologram animate-delay-500">
             Join the ultimate coding battlefield where innovation meets ambition. 
             Build, compete, and win in the most anticipated hackathon of 2025.
